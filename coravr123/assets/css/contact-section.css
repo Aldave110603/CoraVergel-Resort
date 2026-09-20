@@ -1,0 +1,26 @@
+/* CoraVergel Resort — Contact section */
+#contact{padding:72px 0;background:#faf9f6;}
+.cv-contact-wrap{width:min(1120px,calc(100% - 40px));margin:0 auto;}
+.cv-contact-split{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:start;}
+.cv-contact-eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b28a45;font-weight:600;margin-bottom:10px;}
+.cv-contact-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:46px;line-height:1.05;color:#1a1a2e;margin:0 0 16px;}
+.cv-contact-sub{font-size:14px;line-height:1.7;color:#666;max-width:470px;}
+.cv-contact-details{display:grid;gap:14px;margin-top:28px;}
+.cv-contact-detail{display:flex;gap:13px;align-items:flex-start;}
+.cv-contact-detail i{width:36px;height:36px;border-radius:9px;background:#f0e7d6;color:#9b7434;display:flex;align-items:center;justify-content:center;}
+.cv-contact-detail strong{display:block;font-size:13px;color:#222;margin-bottom:2px;}
+.cv-contact-detail span{font-size:12px;color:#777;}
+#contactForm{background:#fff;border:1px solid #ebe7df;border-radius:14px;padding:28px;box-shadow:0 8px 30px rgba(30,25,15,.05);}
+#contactForm .cvc-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+#contactForm .cvc-field{margin-bottom:14px;}
+#contactForm label{display:block;font-size:11px;font-weight:600;color:#444;margin-bottom:6px;}
+#contactForm input,#contactForm textarea,#contactForm select{width:100%;box-sizing:border-box;border:1px solid #ddd9d0;border-radius:8px;background:#fff;padding:11px 12px;font:400 13px 'DM Sans',Arial,sans-serif;color:#222;outline:none;}
+#contactForm textarea{min-height:130px;resize:vertical;}
+#contactForm input:focus,#contactForm textarea:focus,#contactForm select:focus{border-color:#b28a45;box-shadow:0 0 0 3px rgba(178,138,69,.10);}
+.cvc-submit{border:0;border-radius:8px;background:#1a1a2e;color:#fff;padding:12px 20px;font:600 12px 'DM Sans',Arial,sans-serif;cursor:pointer;}
+.cvc-submit:hover{background:#25253d;}
+.cvc-alert{padding:11px 13px;border-radius:8px;font-size:12px;margin-bottom:16px;}
+.cvc-alert.success{background:#eaf6ed;color:#28723a;border:1px solid #cce8d2;}
+.cvc-alert.error{background:#fff0f0;color:#a52f2f;border:1px solid #f0cccc;}
+@media(max-width:800px){.cv-contact-split{grid-template-columns:1fr;gap:28px;}.cv-contact-title{font-size:38px;}}
+@media(max-width:520px){.cv-contact-wrap{width:min(100% - 28px,1120px);}#contactForm{padding:20px;}#contactForm .cvc-row{grid-template-columns:1fr;gap:0;}}
